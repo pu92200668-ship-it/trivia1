@@ -12,7 +12,7 @@ class InicioScene extends Phaser.Scene {
 
     create(){
         // Agrega la imagen de fondo y ajusta su tamaño al canvas
-        this.add.image(0,0,"fondoInicio")
+        this.add.image(0,0,"fondo")
             .setOrigin(0) // Para que la posición (0,0) sea la esquina superior izquierda
             .setDisplaySize(this.scale.width, this.scale.height); // Se adapta a cualquier pantalla
 
@@ -257,4 +257,5 @@ if ("serviceWorker" in navigator) {
         console.log("Error al registrar Service Worker:", error);
       });
   });
+
 }
